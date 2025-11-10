@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -19,3 +23,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9333ea;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7e22ce;
+}
+```
+
+## 📁 **Complete Project Structure**
+```
+eduspark-online-academy/
+├── public/
+│   ├── favicon.ico
+│   └── index.html          ← UPDATED with Tailwind CDN
+├── src/
+│   ├── components/
+│   │   └── EduSpark.jsx    ← Your component
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.js
+│   └── index.css           ← UPDATED with Tailwind directives
+├── .gitignore
+├── package.json            ← UPDATED with Tailwind
+├── tailwind.config.js      ← NEW FILE
+├── postcss.config.js       ← NEW FILE
+└── README.md
